@@ -1,0 +1,26 @@
+{
+  "name": "webroot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://friendsofnonsuch@github.com/friendsofnonsuch/www.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/friendsofnonsuch/www/issues"
+  },
+  "homepage": "https://github.com/friendsofnonsuch/www#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
