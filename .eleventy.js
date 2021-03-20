@@ -5,6 +5,7 @@ module.exports = function( eleventyConfig ) {
 	eleventyConfig.addPassthroughCopy( 'files' );
 	eleventyConfig.addPassthroughCopy( 'uploads' );
 	eleventyConfig.addPassthroughCopy( 'robots.txt' );
+	eleventyConfig.addPassthroughCopy( 'favicon.ico' );
 
 	eleventyConfig.addPassthroughCopy( '_redirects' );
 
