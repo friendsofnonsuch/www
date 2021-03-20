@@ -2,6 +2,10 @@ module.exports = function( eleventyConfig ) {
 	eleventyConfig.setTemplateFormats( 'html,md,liquid' );
 	eleventyConfig.setQuietMode( true );
 
+	eleventyConfig.addPassthroughCopy( 'files' );
+	eleventyConfig.addPassthroughCopy( 'uploads' );
+	eleventyConfig.addPassthroughCopy( 'robots.txt' );
+
 	eleventyConfig.addPassthroughCopy( '_redirects' );
 
 // error handler
