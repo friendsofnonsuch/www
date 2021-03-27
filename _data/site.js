@@ -1,6 +1,6 @@
 require( 'dotenv' ).config();
 
-let baseURL = 'http://www.friendsofnonsuch.co.uk/';
+let baseURL = 'https://www.friendsofnonsuch.co.uk/';
 
 switch ( process.env.ELEVENTY_ENV ) {
 	case 'development':
