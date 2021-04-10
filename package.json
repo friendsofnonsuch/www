@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm run eleventy",
     "watch": "npx @11ty/eleventy --input ./ --serve --watch"
   },
   "repository": {
