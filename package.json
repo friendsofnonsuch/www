@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/friendsofnonsuch/www#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0"
+    "@11ty/eleventy": "^0.12.1"
   },
   "dependencies": {
     "@sanity/client": "^2.7.1",
