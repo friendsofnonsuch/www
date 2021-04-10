@@ -1,7 +1,8 @@
 [build] # default master branch
   publish = '_site/'
-  command = 'ELEVENTY_ENV=production eleventy'
+  environment = { ELEVENTY_ENV = 'production', NODE_VERSION = "14" } # to enable Eleventy to know the environment
+
 
 [context.preview] # 'preview' is the branch name
   publish = '_site/'
-  command = 'ELEVENTY_ENV=preview eleventy'
+  environment = { ELEVENTY_ENV = 'preview', NODE_VERSION = "14" } # to enable Eleventy to know the environment
