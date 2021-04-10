@@ -20,11 +20,6 @@ module.exports = [
 		,url: 'http://www.epsomewellhistory.org.uk/'
 	}
 	,{
-		name: 'The Friends Of Whitehall'
-		,description: 'A registered charity, in the heart of Cheam Village'
-		,url: 'http://friendsofwhitehallcheam.co.uk'
-	}
-	,{
 		name: 'Woodland Trust'
 		,description: 'For Information about Warren Farm, a small area of Nonsuch Park'
 		,url: 'https://www.woodlandtrust.org.uk/visiting-woods/woods/warren-farm/'
