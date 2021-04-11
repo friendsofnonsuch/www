@@ -20,8 +20,8 @@
   "env": {
     "development": {
       "plugins": [
-        "@sanity/vision"
-        ,"order-documents"
+        "@sanity/vision",
+        "order-documents"
       ]
     }
   },
