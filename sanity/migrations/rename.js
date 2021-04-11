@@ -1,5 +1,5 @@
 // rename field "title" to "label" for "link" documents
-// sanity exec rename.js --with-user-token
+// sanity exec migrations/rename.js --with-user-token
 
 require( 'dotenv' ).config( { path: '../.env' } );
 
