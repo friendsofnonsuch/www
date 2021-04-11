@@ -1,32 +1,26 @@
-module.exports = [
-	{
-		name: 'Nonsuch Mansion'
-		,description: 'Information about Nonsuch Mansion as a social venue, including The Pantry café'
-		,url: 'http://www.nonsuchmansion.com/'
-	}
-	,{
-		name: 'Epsom & Ewell Borough Council'
-		,description: 'Information about Nonsuch Park'
-		,url: 'https://www.epsom-ewell.gov.uk/residents/venues-sport-and-leisure-facilities/nonsuch-park'
-	}
-	,{
-		name: 'London Borough Of Sutton'
-		,description: 'Further Information about Nonsuch Park and Cheam Park'
-		,url: 'https://www.sutton.gov.uk/info/200453/parks_trees_and_open_spaces/1149/parks_and_facilities/15'
-	}
-	,{
-		name: 'Epsom & Ewell History Society'
-		,description: 'The history & archaeology society for Epsom and Ewell'
-		,url: 'http://www.epsomewellhistory.org.uk/'
-	}
-	,{
-		name: 'Woodland Trust'
-		,description: 'For Information about Warren Farm, a small area of Nonsuch Park'
-		,url: 'https://www.woodlandtrust.org.uk/visiting-woods/woods/warren-farm/'
-	}
-	,{
-		name: 'Nonsuch Voles'
-		,description: 'Another volunteer group that cares for the park\'s gardens and woodlands'
-		,url: 'https://www.facebook.com/nonsuchvoles/'
-	}
-];
+const sanityClient = require( '@sanity/client' )
+const client = sanityClient( {
+	projectId: 'bshasczz'
+	,dataset: 'production'
+	,token: 'skJzkGqtR4dyb9hnRG8uxYts9EXUOGj2fgLN61zutFbrW85mdad29QRJRmQGkGYPlZ6rO3CgPziFacOg085emRzzfHncHCBsVoUsvGu9GupvanzLxyZw9ZaPKptjGx1ddcWTMjFhseTWLp8wJWHPNWsVNU4zyYdrMIh4XfFBw5Wf9qToKKu3'
+	,apiVersion: '2021-03-25'
+	,useCdn: false
+} );
+
+module.exports = async function() {
+	const query = '*[ _type == "link"] | order( order asc )'
+
+	return await client.fetch( query, {} )
+		.then( response => {
+			return response.map( record => {
+				return {
+					title: record.title
+					,description: record.description
+					,url: record.url
+				}
+			} );
+		} )
+		.catch(
+			error => console.error( error )
+		);
+}

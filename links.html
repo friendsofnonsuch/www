@@ -8,7 +8,7 @@ permalink: /links.html
 	<table>
 		{%- for link in links -%}
 			<tr style="height: 35px;">
-				<td style="margin-bottom: 15px;"><a href="{{ link.url }}" target="_blank"><u>{{ link.name }}</u></a></td>
+				<td style="margin-bottom: 15px;"><a href="{{ link.url }}" target="_blank"><u>{{ link.title }}</u></a></td>
 				<td>- {{ link.description }}</td>
 			</tr>
 		{%- endfor -%}
