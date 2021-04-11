@@ -4,9 +4,10 @@ export default {
 	,type: 'document'
 	,fields: [
 		{
-			title: 'Title'
-			,name: 'title'
+			title: 'Label'
+			,name: 'label'
 			,type: 'string'
+			,validation: Rule => Rule.required().error( 'A label is required' )
 		}
 		,{
 			title: 'Description'
@@ -15,8 +16,10 @@ export default {
 		}
 		,{
 			title: 'Web Address'
+			,description: 'The web site URL starting "http://" or "https://"'
 			,name: 'url'
 			,type: 'string'
+			,validation: Rule => Rule.required().min( 10 ).error( 'A web address is required' )
 		}
 		,{
 			title: 'Order'
@@ -37,4 +40,10 @@ export default {
 			]
 		}
 	]
+	,preview: {
+		select: {
+			title: 'label'
+			,subtitle: 'url'
+		},
+	},
 }
