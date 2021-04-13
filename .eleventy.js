@@ -2,12 +2,12 @@ module.exports = function( eleventyConfig ) {
 	eleventyConfig.setTemplateFormats( 'html,md,liquid' );
 	eleventyConfig.setQuietMode( true );
 
-	eleventyConfig.addPassthroughCopy( 'files' );
-	eleventyConfig.addPassthroughCopy( 'uploads' );
-	eleventyConfig.addPassthroughCopy( 'robots.txt' );
-	eleventyConfig.addPassthroughCopy( 'favicon.ico' );
+	eleventyConfig.addPassthroughCopy( './src/files' );
+	eleventyConfig.addPassthroughCopy( './src/uploads' );
+	eleventyConfig.addPassthroughCopy( './src/robots.txt' );
+	eleventyConfig.addPassthroughCopy( './src/favicon.ico' );
 
-	eleventyConfig.addPassthroughCopy( '_redirects' );
+	eleventyConfig.addPassthroughCopy( './src/_redirects' );
 
 // error handler
 	// eleventyConfig.addPlugin( ErrorOverlay );
