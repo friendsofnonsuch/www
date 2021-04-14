@@ -3,7 +3,7 @@ export default {
 		{
 			name: 'netlify',
 			options: {
-				title: 'Deploy Content Changes to the Preview Site'
+				title: 'Update the website with the changes that have been made'
 				,sites: [
 					{
 						title: 'Friends of Nonsuch'
