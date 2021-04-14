@@ -1,7 +1,6 @@
 .DS_Store
 .env
 .env.*
+
 _site/
 node_modules/
-/sanity/.env.development
-/sanity/.env.production
