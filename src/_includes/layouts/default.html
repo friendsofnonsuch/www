@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<script src="gdpr/gdprscript%EF%B9%96buildTime=1602869932&amp;hasRemindMe=true&amp;stealth=false.js"></script>
-		<title>Friends Of Nonsuch - Home</title>
+		<title>{%- if title -%}{{ title }} | Friends Of Nonsuch{%- else -%}Friends Of Nonsuch{%- endif -%}</title>
 
 		<base href="{{ site.baseURL }}">
 
@@ -358,49 +358,49 @@
 					[ {
 						"id": "185421781567440598",
 						"title": "Home",
-						"url": "index.html",
+						"url": "/",
 						"target": "",
 						"nav_menu": false,
 						"nonclickable": false
 					}, {
 						"id": "535186323497988573",
 						"title": "The Friends",
-						"url": "the-friends.html",
+						"url": "the-friends/",
 						"target": "",
 						"nav_menu": false,
 						"nonclickable": false
 					}, {
 						"id": "350663812683135098",
 						"title": "The Site",
-						"url": "the-site.html",
+						"url": "the-site/",
 						"target": "",
 						"nav_menu": false,
 						"nonclickable": false
 					}, {
 						"id": "182389361961614667",
 						"title": "Museum and Gallery",
-						"url": "museum-and-gallery.html",
+						"url": "museum-and-gallery/",
 						"target": "",
 						"nav_menu": false,
 						"nonclickable": false
 					}, {
 						"id": "975261226488418171",
 						"title": "Research Projects ",
-						"url": "research-projects.html",
+						"url": "research-projects/",
 						"target": "",
 						"nav_menu": false,
 						"nonclickable": false
 					}, {
 						"id": "102169407700519945",
 						"title": "General Information",
-						"url": "general-information.html",
+						"url": "general-information/",
 						"target": "",
 						"nav_menu": false,
 						"nonclickable": false
 					}, {
 						"id": "521953051469660603",
 						"title": "Photos",
-						"url": "photos.html",
+						"url": "photos/",
 						"target": "",
 						"nav_menu": false,
 						"nonclickable": false
@@ -427,7 +427,7 @@
 							<tr>
 								<td id="logo"><span class="wsite-logo">
 
-										<a href="index.html">
+										<a href="/">
 
 											<span id="wsite-title">Friends Of Nonsuch</span>
 
@@ -465,19 +465,19 @@
 					<div id="avmenu">
 						<ul class="wsite-menu-default">
 							<li id="active" class="wsite-menu-item-wrap">
-								<a href="index.html" class="wsite-menu-item">
+								<a href="/" class="wsite-menu-item">
 									Home
 								</a>
 
 							</li>
 							<li id="pg535186323497988573" class="wsite-menu-item-wrap">
-								<a href="the-friends.html" class="wsite-menu-item">
+								<a href="the-friends/" class="wsite-menu-item">
 									The Friends
 								</a>
 								<div class="wsite-menu-wrap" style="display:none">
 									<ul class="wsite-menu">
 										<li id="wsite-nav-615860796850850993" class="wsite-menu-subitem-wrap ">
-											<a href="current-news.html" class="wsite-menu-subitem">
+											<a href="current-news/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Current News
 												</span>
@@ -485,7 +485,7 @@
 
 										</li>
 										<li id="wsite-nav-557435372251111492" class="wsite-menu-subitem-wrap ">
-											<a href="join-us.html" class="wsite-menu-subitem">
+											<a href="join-us/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Join Us
 												</span>
@@ -493,7 +493,7 @@
 
 										</li>
 										<li id="wsite-nav-760741287256769830" class="wsite-menu-subitem-wrap ">
-											<a href="help-needed.html" class="wsite-menu-subitem">
+											<a href="help-needed/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Help Needed
 												</span>
@@ -501,7 +501,7 @@
 
 										</li>
 										<li id="wsite-nav-100010356132178165" class="wsite-menu-subitem-wrap ">
-											<a href="events.html" class="wsite-menu-subitem">
+											<a href="events/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Events
 												</span>
@@ -514,13 +514,13 @@
 
 							</li>
 							<li id="pg350663812683135098" class="wsite-menu-item-wrap">
-								<a href="the-site.html" class="wsite-menu-item">
+								<a href="the-site/" class="wsite-menu-item">
 									The Site
 								</a>
 								<div class="wsite-menu-wrap" style="display:none">
 									<ul class="wsite-menu">
 										<li id="wsite-nav-592904491656578662" class="wsite-menu-subitem-wrap ">
-											<a href="cuddington.html" class="wsite-menu-subitem">
+											<a href="cuddington/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Cuddington
 												</span>
@@ -528,7 +528,7 @@
 
 										</li>
 										<li id="wsite-nav-899929341362907680" class="wsite-menu-subitem-wrap ">
-											<a href="nonsuch-palace.html" class="wsite-menu-subitem">
+											<a href="nonsuch-palace/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Nonsuch Palace
 												</span>
@@ -536,7 +536,7 @@
 
 										</li>
 										<li id="wsite-nav-909029466466377886" class="wsite-menu-subitem-wrap ">
-											<a href="nonsuch-mansion.html" class="wsite-menu-subitem">
+											<a href="nonsuch-mansion/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Nonsuch Mansion
 												</span>
@@ -544,7 +544,7 @@
 
 										</li>
 										<li id="wsite-nav-302068323718393298" class="wsite-menu-subitem-wrap ">
-											<a href="the-park.html" class="wsite-menu-subitem">
+											<a href="the-park/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													The Park
 												</span>
@@ -557,13 +557,13 @@
 
 							</li>
 							<li id="pg182389361961614667" class="wsite-menu-item-wrap">
-								<a href="museum-and-gallery.html" class="wsite-menu-item">
+								<a href="museum-and-gallery/" class="wsite-menu-item">
 									Museum and Gallery
 								</a>
 								<div class="wsite-menu-wrap" style="display:none">
 									<ul class="wsite-menu">
 										<li id="wsite-nav-947620240211422049" class="wsite-menu-subitem-wrap ">
-											<a href="service-wing-museum.html" class="wsite-menu-subitem">
+											<a href="service-wing-museum/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Service Wing Museum
 												</span>
@@ -571,7 +571,7 @@
 
 										</li>
 										<li id="wsite-nav-347112164138222410" class="wsite-menu-subitem-wrap ">
-											<a href="nonsuch-palace-gallery.html" class="wsite-menu-subitem">
+											<a href="nonsuch-palace-gallery/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Nonsuch Palace Gallery
 												</span>
@@ -579,7 +579,7 @@
 
 										</li>
 										<li id="wsite-nav-416359004494678447" class="wsite-menu-subitem-wrap ">
-											<a href="school--group-visits.html" class="wsite-menu-subitem">
+											<a href="school--group-visits/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													School & Group Visits
 												</span>
@@ -587,7 +587,7 @@
 
 										</li>
 										<li id="wsite-nav-469737577513988956" class="wsite-menu-subitem-wrap ">
-											<a href="organised-visits-and-talks.html" class="wsite-menu-subitem">
+											<a href="organised-visits-and-talks/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Organised Visits and Talks
 												</span>
@@ -595,7 +595,7 @@
 
 										</li>
 										<li id="wsite-nav-774617718135404790" class="wsite-menu-subitem-wrap ">
-											<a href="opening-times.html" class="wsite-menu-subitem">
+											<a href="opening-times/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Opening Times
 												</span>
@@ -608,13 +608,13 @@
 
 							</li>
 							<li id="pg975261226488418171" class="wsite-menu-item-wrap">
-								<a href="research-projects.html" class="wsite-menu-item">
+								<a href="research-projects/" class="wsite-menu-item">
 									Research Projects
 								</a>
 								<div class="wsite-menu-wrap" style="display:none">
 									<ul class="wsite-menu">
 										<li id="wsite-nav-649417945880739138" class="wsite-menu-subitem-wrap ">
-											<a href="farmer-family.html" class="wsite-menu-subitem">
+											<a href="farmer-family/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Farmer Family
 												</span>
@@ -622,7 +622,7 @@
 
 										</li>
 										<li id="wsite-nav-154770990422934199" class="wsite-menu-subitem-wrap ">
-											<a href="stained-glass.html" class="wsite-menu-subitem">
+											<a href="stained-glass/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Stained Glass
 												</span>
@@ -635,13 +635,13 @@
 
 							</li>
 							<li id="pg102169407700519945" class="wsite-menu-item-wrap">
-								<a href="general-information.html" class="wsite-menu-item">
+								<a href="general-information/" class="wsite-menu-item">
 									General Information
 								</a>
 								<div class="wsite-menu-wrap" style="display:none">
 									<ul class="wsite-menu">
 										<li id="wsite-nav-942771889964701973" class="wsite-menu-subitem-wrap ">
-											<a href="find-us.html" class="wsite-menu-subitem">
+											<a href="find-us/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Find Us
 												</span>
@@ -649,7 +649,7 @@
 
 										</li>
 										<li id="wsite-nav-148990254187187653" class="wsite-menu-subitem-wrap ">
-											<a href="contact-us.html" class="wsite-menu-subitem">
+											<a href="contact-us/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Contact Us
 												</span>
@@ -657,7 +657,7 @@
 
 										</li>
 										<li id="wsite-nav-172129729117022347" class="wsite-menu-subitem-wrap ">
-											<a href="sales.html" class="wsite-menu-subitem">
+											<a href="sales/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Sales
 												</span>
@@ -665,7 +665,7 @@
 
 										</li>
 										<li id="wsite-nav-112875806342532138" class="wsite-menu-subitem-wrap ">
-											<a href="links.html" class="wsite-menu-subitem">
+											<a href="links/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Links
 												</span>
@@ -673,7 +673,7 @@
 
 										</li>
 										<li id="wsite-nav-589463640259635783" class="wsite-menu-subitem-wrap ">
-											<a href="nonsuch-garden-map.html" class="wsite-menu-subitem">
+											<a href="nonsuch-garden-map/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Nonsuch Garden Map
 												</span>
@@ -681,7 +681,7 @@
 
 										</li>
 										<li id="wsite-nav-959560672909457768" class="wsite-menu-subitem-wrap ">
-											<a href="memorial-plaques.html" class="wsite-menu-subitem">
+											<a href="memorial-plaques/" class="wsite-menu-subitem">
 												<span class="wsite-menu-title">
 													Memorial Plaques
 												</span>
@@ -694,7 +694,7 @@
 
 							</li>
 							<li id="pg521953051469660603" class="wsite-menu-item-wrap">
-								<a href="photos.html" class="wsite-menu-item">
+								<a href="photos/" class="wsite-menu-item">
 									Photos
 								</a>
 
