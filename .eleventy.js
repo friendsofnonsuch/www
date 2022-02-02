@@ -12,6 +12,8 @@ module.exports = function( eleventyConfig ) {
 // error handler
 	// eleventyConfig.addPlugin( ErrorOverlay );
 
+	eleventyConfig.addShortcode( 'year', () => `${ new Date().getFullYear() }`);
+
 	eleventyConfig.addFilter( 'dump', function( anything ) {
 		console.log( 'dump:', anything );
 	} );
