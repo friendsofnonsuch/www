@@ -2,7 +2,10 @@ require( 'dotenv' ).config();
 
 let dayjs = require( 'dayjs' );
 var AdvancedFormat = require( 'dayjs/plugin/advancedFormat' );
+var Timezone = require( 'dayjs/plugin/timezone' );
+
 dayjs.extend( AdvancedFormat );
+dayjs.extend( Timezone );
 
 const sanityClient = require( '@sanity/client' );
 
@@ -23,7 +26,7 @@ module.exports = async function() {
 			return response.map( event => {
 				return {
 					date: dayjs( event.date ).format( 'dddd, Do MMMM' )
-					,time: dayjs( event.date ).format( 'h.mma' )
+					,time: dayjs( event.date ).format( 'h.mma', 'Europe/London' )
 					,speaker: event.speaker
 					,subject: event.subject
 				};
