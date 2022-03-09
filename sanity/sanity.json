@@ -14,8 +14,8 @@
     "@sanity/default-login",
     "@sanity/dashboard",
     "@sanity/desk-tool",
-    "dashboard-widget-netlify",
-    "order-documents"
+    "order-documents",
+    "dashboard-widget-netlify"
   ],
   "env": {
     "development": {
