@@ -27,4 +27,22 @@ export default {
 	,initialValue: {
 		isStableWing: true
 	}
+	,orderings: [
+		{
+			title: 'Event Order',
+			name: 'eventOrder',
+			by: [
+				{
+					field: 'date'
+					,direction: 'asc'
+				}
+			]
+		}
+	]
+	,preview: {
+		select: {
+			title: 'date'
+			,subtitle: 'speaker'
+		},
+	},
 }
