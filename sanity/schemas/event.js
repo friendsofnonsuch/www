@@ -9,15 +9,14 @@ export default {
 			,type: 'datetime'
 		}
 		,{
-			title: 'Title'
-			,name: 'title'
+			title: 'Speaker'
+			,name: 'speaker'
 			,type: 'string'
 		}
 		,{
-			title: 'Description'
-			,name: 'description'
-			,type: 'array'
-			,of: [ { type: 'block' } ]
+			title: 'Subject'
+			,name: 'subject'
+			,type: 'string'
 		}
 	]
 }

@@ -1,6 +1,9 @@
 require( 'dotenv' ).config();
 
 let dayjs = require( 'dayjs' );
+var AdvancedFormat = require( 'dayjs/plugin/advancedFormat' );
+dayjs.extend( AdvancedFormat );
+
 const sanityClient = require( '@sanity/client' );
 
 const client = sanityClient( {
@@ -11,16 +14,18 @@ const client = sanityClient( {
 	,useCdn: false
 } );
 
+
 module.exports = async function() {
-	const query = '*[ _type == "event" ]'
+	const query = '*[ _type == "event" ] | order( date asc )'
 
 	return await client.fetch( query, {} )
 		.then( response => {
 			return response.map( event => {
 				return {
-					when: dayjs( event.date ).format( 'dddd, D MMMM YYYY at ' )
-					,title: event.title
-					,description: event.description
+					date: dayjs( event.date ).format( 'dddd, Do MMMM' )
+					,time: dayjs( event.date ).format( 'h.mma' )
+					,speaker: event.speaker
+					,subject: event.subject
 				};
 			} );
 		} )
