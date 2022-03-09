@@ -31,6 +31,7 @@ module.exports = async function() {
 					,time: dayjs( event.date ).tz( 'Europe/London' ).format( 'h.mma' )
 					,speaker: event.speaker
 					,subject: event.subject
+					,isStableWing: event.isStableWing
 				};
 			} );
 		} )

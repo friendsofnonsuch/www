@@ -18,5 +18,13 @@ export default {
 			,name: 'subject'
 			,type: 'string'
 		}
+		,{
+			title: 'Talk Given in the Stable Wing'
+			,name: 'isStableWing'
+			,type: 'boolean'
+		}
 	]
+	,initialValue: {
+		isStableWing: true
+	}
 }
