@@ -27,7 +27,7 @@ module.exports = async function() {
 				return {
 					date: dayjs( event.date ).format( 'dddd, Do MMMM' )
 					,time: dayjs( event.date ).format( 'h.mma', 'Europe/London' )
-					,speaker: event.speaker
+					,speaker: event.date
 					,subject: event.subject
 				};
 			} );
