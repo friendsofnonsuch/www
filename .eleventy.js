@@ -4,6 +4,7 @@ module.exports = function( eleventyConfig ) {
 
 	eleventyConfig.addPassthroughCopy( './src/files' );
 	eleventyConfig.addPassthroughCopy( './src/uploads' );
+	eleventyConfig.addPassthroughCopy( './src/documents' );
 	eleventyConfig.addPassthroughCopy( './src/robots.txt' );
 	eleventyConfig.addPassthroughCopy( './src/favicon.ico' );
 
