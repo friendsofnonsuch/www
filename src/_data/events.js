@@ -8,7 +8,7 @@ switch ( process.env.ELEVENTY_ENV ) {
 	break;
 
 	default:
-		url = 'http://admin.friendsofnonsuch.co.uk/api/events/';
+		url = 'https://admin.friendsofnonsuch.co.uk/api/events/';
 }
 
 module.exports = async function () {
