@@ -24,8 +24,8 @@
     "@11ty/eleventy": "^1.0.0"
   },
   "dependencies": {
+    "@11ty/eleventy-fetch": "^4.0.1",
     "@sanity/client": "^2.7.1",
-    "dayjs": "^1.10.4",
     "dotenv": "^8.2.0"
   }
 }

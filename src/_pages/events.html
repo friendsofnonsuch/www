@@ -7,33 +7,39 @@ meta:
 <div class="paragraph">
 	<h1>Dates for Your Diary</h1>
 
-	<p>All talks are given in the Stable Block (unless otherwise indicated *, in which case they will be held in the Mansion House). Refreshments are offered in the Loose Box after all events and attendees are asked to arrive 15 minutes before the start.</p>
+	<p>Refreshments are offered in the Loose Box after all events and attendees are asked to arrive 15 minutes before the start.</p>
 
 	<p>Talks are free to members. Non-members £6.</p>
 </div>
 
 <div class="paragraph">
-	<table class="wsite-multicol-table">
-		<thead>
-			<tr>
-				<th>Date</th>
-				<th>Time</th>
-				<th>Speaker</th>
-				<th>Subject</th>
-			</tr>
-		</thead>
-
-		<tbody>
-			{%- for event in events -%}
-				<tr style="border-top: 1px solid;">
-					<td style="padding: 10px 0;">{%- if event.isStableWing == false %}*{%- endif %} {{ event.date }}</td>
-					<td>{{ event.time }}</td>
-					<td>{{ event.speaker }}</td>
-					<td>{{ event.subject }}</td>
+	{%- if events.data.size > 0 -%}
+		<table class="wsite-multicol-table">
+			<thead>
+				<tr>
+					<th>Date</th>
+					<th>Time</th>
+					<th>Speaker</th>
+					<th>Subject</th>
+					<th>Location</th>
 				</tr>
-			{%- endfor -%}
-		</tbody>
-	</table>
+			</thead>
+
+			<tbody>
+				{%- for event in events.data -%}
+					<tr style="border-top: 1px solid;">
+						<td style="padding: 10px 0;">{{ event.date }}</td>
+						<td>{{ event.time }}</td>
+						<td>{{ event.speaker }}</td>
+						<td>{{ event.subject }}</td>
+						<td>{{ event.location }}</td>
+					</tr>
+				{%- endfor -%}
+			</tbody>
+		</table>
+	{%- else -%}
+		<p>Sorry, we don't have any events currently planned.</p>
+	{%- endif -%}
 </div>
 
 <div class="paragraph">
