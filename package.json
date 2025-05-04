@@ -6,7 +6,7 @@
     "start": "rm -rf ./_site && npm run dev:eleventy",
     "dev:eleventy": "npx @11ty/eleventy --input ./src/ --serve",
     "build": "npm run build:eleventy",
-    "build:eleventy": "npx @11ty/eleventy --input ./src/"
+    "build:eleventy": "npx @11ty/eleventy --input ./src/ --output ./public/"
   },
   "keywords": [],
   "author": "",
