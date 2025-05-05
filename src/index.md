@@ -2,4 +2,4 @@
 layout: layouts/default.html
 ---
 
-# Hello world!
+<h1 class="text-3xl font-bold">Hello world!</h1>
