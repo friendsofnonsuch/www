@@ -6,7 +6,7 @@
     "start": "rm -rf ./_site && npm-run-all -p dev:*",
     "dev:eleventy": "npx @11ty/eleventy --input ./src/ --serve",
     "dev:tailwind": "npx @tailwindcss/cli -i ./src/tailwind.css -o ./_site/styles/tailwind.css --watch",
-    "build": "npm-run-all -s build:*",
+    "build": "npm-run-all -s build:eleventy build:tailwind",
     "build:eleventy": "npx @11ty/eleventy --input ./src/ --output ./public/",
     "build:tailwind": "npx @tailwindcss/cli -i ./src/tailwind.css -o './public/styles/tailwind.css'"
   },
