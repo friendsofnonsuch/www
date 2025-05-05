@@ -8,7 +8,7 @@
     "dev:tailwind": "npx @tailwindcss/cli -i ./src/tailwind.css -o ./_site/styles/tailwind.css --watch",
     "build": "npm-run-all -s 'build:*'",
     "build:eleventy": "npx @11ty/eleventy --input ./src/ --output ./public/",
-    "build:tailwind": "npx @tailwindcss/cli -i ./src/tailwind.css -o ./public/styles/tailwind.css",
+    "build:tailwind": "npx @tailwindcss/cli -i ./src/tailwind.css -o './public/styles/tailwind.css'"
   },
   "keywords": [],
   "author": "",
