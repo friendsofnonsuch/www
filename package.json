@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "rm -rf ./_site && npm-run-all -p dev:*",
+    "start": "rm -rf ./_site && npm run dev:eleventy && npm run dev:tailwind",
     "dev:eleventy": "npx @11ty/eleventy --input ./src/ --serve",
     "dev:tailwind": "npx @tailwindcss/cli -i ./src/tailwind.css -o ./_site/styles/tailwind.css --watch",
-    "build": "npm-run-all -s build:eleventy build:tailwind",
+    "build": "npm run build:eleventy && npm run build:tailwind",
     "build:eleventy": "npx @11ty/eleventy --input ./src/ --output ./public/",
-    "build:tailwind": "npx @tailwindcss/cli -i ./src/tailwind.css -o './public/styles/tailwind.css'"
+    "build:tailwind": "npx @tailwindcss/cli -i ./src/tailwind.css -o ./public/styles/tailwind.css"
   },
   "keywords": [],
   "author": "",
@@ -19,8 +19,6 @@
     "@11ty/eleventy": "^3.0.0",
     "@tailwindcss/cli": "^4.1.5",
     "tailwindcss": "^4.1.5"
-  },
-  "devDependencies": {
-    "npm-run-all": "^4.1.5"
+
   }
 }
