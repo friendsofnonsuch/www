@@ -1,9 +1,9 @@
 {
-  "name": "Friends of Nonsuch",
+  "name": "Friends_of_Nonsuch",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "rm -rf ./_site && npm run dev:eleventy && npm run dev:tailwind",
+    "start": "rm -rf ./_site && npm-run-all -p dev:*",
     "dev:eleventy": "npx @11ty/eleventy --input ./src/ --serve",
     "dev:tailwind": "npx @tailwindcss/cli -i ./src/tailwind.css -o ./_site/styles/tailwind.css --watch",
     "build": "npm run build:eleventy && npm run build:tailwind",
@@ -19,5 +19,8 @@
     "@11ty/eleventy": "^3.0.0",
     "@tailwindcss/cli": "^4.1.5",
     "tailwindcss": "^4.1.5"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }
