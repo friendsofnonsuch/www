@@ -1,0 +1,74 @@
+[
+	{
+		"label": "The Friends",
+		"url": "/current-news/",
+		"submenu": [
+			{
+				"label": "Current News",
+				"url": "/current-news/"
+			},
+			{
+				"label": "Join Us",
+				"url": "/join-us/"
+			},
+			{
+				"label": "Help Needed",
+				"url": "/help-needed/"
+			}
+		]
+	},
+	{
+		"label": "The Site",
+		"url": "/",
+		"submenu": [
+			{
+				"label": "Content",
+				"url": "/"
+			}
+		]
+	},
+	{
+		"label": "Museum &amp; Gallery",
+		"url": "/",
+		"submenu": [
+			{
+				"label": "Content",
+				"url": "/"
+			}
+		]
+	},
+	{
+		"label": "Book Room",
+		"url": "/book-room/"
+	},
+	{
+		"label": "Research Projects",
+		"url": "/",
+		"submenu": [
+			{
+				"label": "Content",
+				"url": "/"
+			}
+		]
+	},
+	{
+		"label": "General Info",
+		"url": "/",
+		"submenu": [
+			{
+				"label": "Content",
+				"url": "/"
+			}
+		]
+	},
+	{
+		"label": "Photos",
+		"url": "/",
+		"submenu": [
+			{
+				"label": "Content",
+				"url": "/"
+			}
+		]
+	}
+]
