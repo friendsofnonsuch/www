@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-	--color-primary: oklch(53.2% 0.157 131.589);
-	--color-secondary: oklch(94.5% 0.129 101.54);
+	--color-primary: oklch( 53.2% 0.157 131.589 );
+	--color-secondary: oklch( 94.5% 0.129 101.54 );
+}
+
+@layer components {
+	p { @apply pt-2 pb-2; }
+	a { @apply text-primary underline; }
 }
