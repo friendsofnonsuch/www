@@ -1,0 +1,5 @@
+{% if menu.url == page.url %}
+	<a href="{{ menu.url }}" class="rounded-md bg-green-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">{{ menu.label }}</a>
+{% else %}
+	<a href="{{ menu.url }}" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-green-500/25">{{ menu.label }}</a>
+{% endif %}
