@@ -3,10 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Friends of Nonsuch</title>
 	<link href="./styles/tailwind.css" rel="stylesheet">
 </head>
-<body>
+
+<body class="bg-secondary">
+	<div class="flex items-center justify-between gap-x-6 bg-primary px-6 py-2.5 sm:pr-3.5 lg:pl-8">
+		<!-- <p class="text-sm/6 text-white">
+			<a href="/">
+				<strong class="font-semibold">Friends of Nonsuch</strong>
+			</a>
+		</p> -->
+
+		<h1 class="text-3xl font-bold text-white">Friends of Nonsuch</h1>
+	</div>
+
+	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+		<!-- We've used 3xl here, but feel free to try other max-widths based on your needs -->
+
+		<div class="mx-auto max-w-5xl">
+			{{ content }}
+		</div>
+	</div>
+
 	{{ content }}
 </body>
 </html>
