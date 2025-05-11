@@ -5,59 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Friends of Nonsuch</title>
 	<link href="/styles/tailwind.css" rel="stylesheet">
-	<script src="https://unpkg.com/alpinejs" defer></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
 </head>
 
 <body class="h-full">
 <div class="min-h-full">
 	<div class="bg-primary pb-32">
-		<nav x-data="{ isOpen: false }" class="border-b border-green-300/25 bg-primary lg:border-none">
-			<div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
-				<div class="relative flex h-16 items-center justify-between lg:border-b lg:border-green-400/25">
-					<div class="flex items-center px-2 lg:px-0">
-						<div class="shrink-0">
-							<img class="block size-8" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=green&shade=300" alt="Friends of Nonsuch">
-						</div>
-
-						<div class="hidden lg:ml-10 lg:block">
-							<div class="flex space-x-4">
-								{% for menu in menus %}
-									{%- include 'menuItem.html', media: 'desktop' %}
-								{% endfor -%}
-							</div>
-						</div>
-					</div>
-
-					<div class="flex lg:hidden">
-						<!-- Mobile menu button -->
-						<button @click="isOpen = !isOpen" type="button" class="relative inline-flex items-center justify-center rounded-md bg-primary p-2 text-green-200 hover:bg-green-500/25 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-600" aria-controls="mobile-menu" aria-expanded="false">
-							<span class="absolute -inset-0.5"></span>
-							<span class="sr-only">Open main menu</span>
-
-							<!-- hamburger icon -->
-							<!-- Menu open: "hidden", Menu closed: "block" -->
-							<svg x-show="!isOpen" :class="isOpen ? 'hidden' : 'block'" class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-							</svg>
-
-							<!-- Menu open: "block", Menu closed: "hidden" -->
-							<svg x-show="isOpen" :class="isOpen ? 'block' : 'hidden'" class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-							</svg>
-						</button>
-					</div>
-				</div>
-			</div>
-
-			<!-- Mobile menu, show/hide based on menu state. -->
-			<div x-show="isOpen" x-cloak class="lg:hidden" id="mobile-menu">
-				<div class="space-y-1 px-2 pb-3 pt-2">
-					{% for menu in menus %}
-						{%- include 'menuItem.html', media: 'mobile' %}
-					{% endfor -%}
-				</div>
-			</div>
-		</nav>
+		{% include 'menubar.html' %}
 
 		<header class="py-10">
 			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
