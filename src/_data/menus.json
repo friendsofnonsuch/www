@@ -19,7 +19,7 @@
 	},
 	{ "label": "Museum &amp; Gallery",
 		"submenu": [
-			{ "label": "Museum &amp; Gallery", "url": "/museum-and-gallery/" },
+			{ "label": "Museum &amp; Gallery", "url": "/museum-gallery/" },
 			{ "label": "Service Wing Museum", "url": "/service-wing-museum/" },
 			{ "label": "Nonsuch Palace Model", "url": "/nonsuch-palace-model/" },
 			{ "label": "School &amp; Group Visits", "url": "/school-group-visits/" },
