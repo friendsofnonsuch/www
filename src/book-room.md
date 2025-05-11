@@ -1,5 +1,5 @@
 ---
-title: The Nonsuch Book Room
+title: The Book Room
 ---
 
 The Nonsuch Book Room is open at all times when the Service Wing is open to the public. There is an extensive range of fiction and non fiction books at very reasonable prices so why not come along and have a browse. We have over a thousand books on our shelves. We can now take card payments so there is no reason not to buy a book!
