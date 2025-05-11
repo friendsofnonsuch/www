@@ -9,10 +9,10 @@ If you think you can help us in any other way please contact us. A list of conta
 ## Museum Stewards
 The museum and the Nonsuch Palace Gallery requires help with stewarding, designing and mounting displays, educational support and research projects
 
-To help with stewarding please contact Wendy Mayes - 020 8644 2455
+To help with stewarding please contact Wendy Mayes - [020 8644 2455](tel:+442086442455)
 
 ## School and Adult Visits
-We have an urgent vacancy for a steward to look after both school and adult visitors to the Service Wing Museum and The Gallery during the week. If any members would like to help, we would be pleased to hear from you. Please contact Wendy Mayes on 020 8644 2455.
+We have an urgent vacancy for a steward to look after both school and adult visitors to the Service Wing Museum and The Gallery during the week. If any members would like to help, we would be pleased to hear from you. Please contact Wendy Mayes on [020 8644 2455](tel:+442086442455).
 
 ## Book Sales
 The book stall will be open from 2pm to 4.30pm on those days when the Service Wing is open. Please see the Opening Times section on this website for the dates. A fine selection of fiction, non-fiction and children's books will be on sale at very reasonable prices. We look forward to your custom.
@@ -27,6 +27,6 @@ During the open season, in the summer months, a great deal of time is devoted to
 
 Since the arrival of the magnificent model of Nonsuch Palace, all members of the Working Party have taken, and are still taking, a turn at stewarding on those days when it is open to the public.
 
-​If you would like to join us for friendship and camaraderie, please do contact me on 020 8393 0486. Thank you.
+​If you would like to join us for friendship and camaraderie, please do contact me on [020 8393 0486](tel:+442083930486). Thank you.
 
 Ian Collins

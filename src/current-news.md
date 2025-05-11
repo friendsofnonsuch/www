@@ -10,13 +10,13 @@ Mike Teasdale
 ## Service Wing Museum and Gallery
 In order to make a visit to the Nonsuch Service Wing Museum an enjoyable and informative experience we try to have a steward in every room to explain how the room and the artefacts there were used by the servants of the day. These stewards are all volunteer members who give a little (or a lot in some cases!) of their time to keep the museum running. We also take parties of adults and groups of school children on tours of the service wing and the stewards are involved with those visits. We need people to help and are always grateful to welcome new people as stewards. This can involve as little as two hours at a time and can be as often or infrequent as liked. Information and help is given to all newcomers. If you feel you can give a little of your time and would like to join our happy band, please contact me.
 
-Wendy Mayes (020 8644 2455)
+Wendy Mayes ([020 8644 2455](tel:+442086442455))
 
 [wendy.mayes1@gmail.com](mailto:wendy.mayes1@gmail.com)
 
 ## Working Party Report 2022
 Maintenance has been ongoing as usual. Flat roofs and gutters have been cleared and cleaned. The cement on the book store walls has been repaired with laminated panels which can be used for posters if required. Fence posts in our garden will be repaired with wood supports after tree cutting is complete.
 
-Many thanks again to the working party ladies who do such an amazing job, inside and outside to keep the Museum and courtyard looking smart and welcoming for all our visitors. Now the overhanging trees and bushes have been cleared, they are looking forward to re-landscaping the garden in the courtyard. We are always looking for new help, so if you have any spare time come along to the Stable Block on a Thursday morning for a coffee and a chat about what we do, or phone me on 020 8393 0486.
+Many thanks again to the working party ladies who do such an amazing job, inside and outside to keep the Museum and courtyard looking smart and welcoming for all our visitors. Now the overhanging trees and bushes have been cleared, they are looking forward to re-landscaping the garden in the courtyard. We are always looking for new help, so if you have any spare time come along to the Stable Block on a Thursday morning for a coffee and a chat about what we do, or phone me on [020 8393 0486](tel:+442083930486).
 
 Ian Collins

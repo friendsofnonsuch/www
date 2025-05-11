@@ -26,4 +26,4 @@ The entrance charge for schools is £1.50 per pupil. Teachers in charge of group
 
 Other extra accompanying adults £5.00
 
-For further details or to book please contact Mrs. Wendy Mayes on 020 8644 2455.
+For further details or to book please contact Mrs. Wendy Mayes on [020 8644 2455](tel:+442086442455).

@@ -16,5 +16,5 @@ Our organisation is also willing to provide a speaker on various topics relating
 
 Contact:
 
-Richard Harris - 07887 750417
-Mrs. Wendy Mayes - 020 8644 2455
+Richard Harris - [07887 750417](tel:+447887750417)
+Mrs. Wendy Mayes - [020 8644 2455](tel:+442086442455)

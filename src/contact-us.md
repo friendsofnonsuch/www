@@ -9,7 +9,7 @@ Ms Karyn Agralli, Hon Treasurer
 [treasurer@friendsofnonsuch.co.uk](mailto:treasurer@friendsofnonsuch.co.uk)
 
 The Rev. Michael Dunk, Hon. Registrar
-020 3609 8013
+[020 3609 8013](tel:+442036098013)
 
 General Enquiries
 Hon Secretary - Vacant
