@@ -298,6 +298,9 @@
   .w-full {
     width: 100%;
   }
+  .w-screen {
+    width: 100vw;
+  }
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
@@ -387,6 +390,9 @@
   .bg-yellow-50 {
     background-color: var(--color-yellow-50);
   }
+  .object-cover {
+    object-fit: cover;
+  }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
   }
@@ -446,6 +452,9 @@
   }
   .pl-6 {
     padding-left: calc(var(--spacing) * 6);
+  }
+  .text-center {
+    text-align: center;
   }
   .text-3xl {
     font-size: var(--text-3xl);
@@ -603,6 +612,11 @@
   .lg\:hidden {
     @media (width >= 64rem) {
       display: none;
+    }
+  }
+  .lg\:w-5\/6 {
+    @media (width >= 64rem) {
+      width: calc(5/6 * 100%);
     }
   }
   .lg\:flex-1 {
