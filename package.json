@@ -6,7 +6,6 @@
     "start": "rm -rf ./_site && npm-run-all -p dev:*",
     "dev:eleventy": "npx @11ty/eleventy --input ./src/ --serve",
     "dev:tailwind": "npx @tailwindcss/cli -i ./src/tailwind.css -o ./_site/styles/tailwind.css --watch",
-
     "build": "npm run build:eleventy && npm run build:tailwind",
     "build:eleventy": "npx @11ty/eleventy --input ./src/ --output ./public/",
     "build:tailwind": "npx @tailwindcss/cli -i ./src/tailwind.css -o ./public/styles/tailwind.css"
@@ -19,6 +18,7 @@
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@tailwindcss/cli": "^4.1.5",
+    "markdown-it-anchor": "^9.2.0",
     "tailwindcss": "^4.1.5"
   },
   "devDependencies": {
