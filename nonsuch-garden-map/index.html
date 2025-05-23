@@ -12,7 +12,7 @@
 <div class="min-h-full">
 	<div class="bg-primary pb-32">
 		<header class="bg-primary">
-	<nav x-data="{ isOpen: false }" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+	<nav x-data="{open: true}" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
 		<div class="flex lg:flex-1">
 			<a href="/" class="-m-1.5 p-1.5">
 				<span class="sr-only">Friends of Nonsuch</span>
@@ -21,19 +21,21 @@
 			</a>
 		</div>
 
+		<!-- hamburger menu -->
 		<div class="flex lg:hidden">
-			<button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+			<button @click="open=!open" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
 				<span class="sr-only">Open main menu</span>
 
-				<svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+				<svg x-show="open" class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
 					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 				</svg>
 			</button>
 		</div>
 
+		<!-- desktop menu -->
 		<div class="hidden lg:flex lg:gap-x-6">
 			<div x-data="{ open: false }" class="relative">
-			<button  @click="open=!open" type="button" class="flex p-2 items-center gap-x-1 text-sm/6 font-semibold text-white" aria-expanded="false">
+			<button @click="open=!open" type="button" class="flex p-2 items-center gap-x-1 text-sm/6 font-semibold text-white" aria-expanded="false">
 				The Friends
 				<svg class="size-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
 					<path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
@@ -43,7 +45,7 @@
 			<div x-show="open" @click.away="open=false" class="absolute top-full z-10 mt-3 w-56 rounded-xl bg-green-900 p-2 shadow-lg ring-1 ring-gray-900/5"><a href="/about-us/" class="block rounded-lg px-3 py-2 text-sm/6 font-semibold text-white hover:bg-green-500/25 no-underline">About Us</a><a href="/current-news/" class="block rounded-lg px-3 py-2 text-sm/6 font-semibold text-white hover:bg-green-500/25 no-underline">Current News</a><a href="/join-us/" class="block rounded-lg px-3 py-2 text-sm/6 font-semibold text-white hover:bg-green-500/25 no-underline">Join Us</a><a href="/help-needed/" class="block rounded-lg px-3 py-2 text-sm/6 font-semibold text-white hover:bg-green-500/25 no-underline">Help Needed</a><a href="/events/" class="block rounded-lg px-3 py-2 text-sm/6 font-semibold text-white hover:bg-green-500/25 no-underline">Events</a></div>
 		</div>
 			<div x-data="{ open: false }" class="relative">
-			<button  @click="open=!open" type="button" class="flex p-2 items-center gap-x-1 text-sm/6 font-semibold text-white" aria-expanded="false">
+			<button @click="open=!open" type="button" class="flex p-2 items-center gap-x-1 text-sm/6 font-semibold text-white" aria-expanded="false">
 				The Site
 				<svg class="size-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
 					<path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
@@ -53,7 +55,7 @@
 			<div x-show="open" @click.away="open=false" class="absolute top-full z-10 mt-3 w-56 rounded-xl bg-green-900 p-2 shadow-lg ring-1 ring-gray-900/5"><a href="/the-site/" class="block rounded-lg px-3 py-2 text-sm/6 font-semibold text-white hover:bg-green-500/25 no-underline">The Site</a><a href="/cuddington/" class="block rounded-lg px-3 py-2 text-sm/6 font-semibold text-white hover:bg-green-500/25 no-underline">Cuddington</a><a href="/nonsuch-palace/" class="block rounded-lg px-3 py-2 text-sm/6 font-semibold text-white hover:bg-green-500/25 no-underline">Nonsuch Palace</a><a href="/nonsuch-mansion/" class="block rounded-lg px-3 py-2 text-sm/6 font-semibold text-white hover:bg-green-500/25 no-underline">Nonsuch Mansion</a><a href="/the-park/" class="block rounded-lg px-3 py-2 text-sm/6 font-semibold text-white hover:bg-green-500/25 no-underline">The Park</a></div>
 		</div>
 			<div x-data="{ open: false }" class="relative">
-			<button  @click="open=!open" type="button" class="flex p-2 items-center gap-x-1 text-sm/6 font-semibold text-white" aria-expanded="false">
+			<button @click="open=!open" type="button" class="flex p-2 items-center gap-x-1 text-sm/6 font-semibold text-white" aria-expanded="false">
 				Museum &amp; Gallery
 				<svg class="size-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
 					<path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
@@ -64,7 +66,7 @@
 		</div>
 			<a href="/book-room/" class="text-sm/6 font-semibold p-2 text-white no-underline">Book Room</a>
 			<div x-data="{ open: false }" class="relative">
-			<button  @click="open=!open" type="button" class="flex p-2 items-center gap-x-1 text-sm/6 font-semibold text-white" aria-expanded="false">
+			<button @click="open=!open" type="button" class="flex p-2 items-center gap-x-1 text-sm/6 font-semibold text-white" aria-expanded="false">
 				Research Projects
 				<svg class="size-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
 					<path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
@@ -74,7 +76,7 @@
 			<div x-show="open" @click.away="open=false" class="absolute top-full z-10 mt-3 w-56 rounded-xl bg-green-900 p-2 shadow-lg ring-1 ring-gray-900/5"><a href="/research-projects/" class="block rounded-lg px-3 py-2 text-sm/6 font-semibold text-white hover:bg-green-500/25 no-underline">Research Projects</a><a href="/farmer-family/" class="block rounded-lg px-3 py-2 text-sm/6 font-semibold text-white hover:bg-green-500/25 no-underline">Farmer Family</a><a href="/stained-glass/" class="block rounded-lg px-3 py-2 text-sm/6 font-semibold text-white hover:bg-green-500/25 no-underline">Stained Glass</a></div>
 		</div>
 			<div x-data="{ open: false }" class="relative">
-			<button  @click="open=!open" type="button" class="flex p-2 items-center gap-x-1 text-sm/6 font-semibold text-white" aria-expanded="false">
+			<button @click="open=!open" type="button" class="flex p-2 items-center gap-x-1 text-sm/6 font-semibold text-white" aria-expanded="false">
 				General Information
 				<svg class="size-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
 					<path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
@@ -85,84 +87,117 @@
 		</div>
 			<a href="/photos/" class="text-sm/6 font-semibold p-2 text-white no-underline">Photos</a>
 			</div>
-	</nav>
 
-	<!-- Mobile menu, show/hide based on menu open state. -->
-	<div class="lg:hidden" role="dialog" aria-modal="true">
-		<!-- Background backdrop, show/hide based on slide-over state. -->
-		<div class="fixed inset-0 z-10"></div>
-		<div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-		<div class="flex items-center justify-between">
-			<a href="#" class="-m-1.5 p-1.5">
-			<span class="sr-only">Your Company</span>
-			<img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="">
-			</a>
-			<button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-			<span class="sr-only">Close menu</span>
-			<svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-				<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-			</svg>
+		<!-- Mobile menu, show/hide based on menu open state. -->
+		<div x-show="!open" class="lg:hidden" role="dialog" aria-modal="true">
+			<!-- Background backdrop, show/hide based on slide-over state. -->
+			<div class="fixed inset-0 z-10"></div>
+
+			<div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-primary px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+				<div class="flex items-center justify-between">
+					<a href="#" class="-m-1.5 p-1.5">
+						<span class="sr-only">Friends of Nonsuch</span>
+						<img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="">
+					</a>
+
+					<button @click="open = !open" type="button" class="-m-2.5 rounded-md p-2.5 text-white">
+						<span class="sr-only">Close menu</span>
+
+						<svg x-show="!open" class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+						</svg>
+					</button>
+				</div>
+
+				<div class="mt-6 flow-root">
+					<div class="">
+						<div x-data="{ open: false }" class="space-y-2">
+			<button @click="open=!open" type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-white hover:bg-green-500/25" aria-controls="disclosure-1" aria-expanded="false">
+				The Friends
+				<!--
+				Expand/collapse icon, toggle classes based on menu open state.
+
+				Open: "rotate-180", Closed: ""
+				-->
+				<svg class="size-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+					<path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+				</svg>
 			</button>
+
+			<!-- sub-menu, show/hide based on menu state -->
+			<div x-show="open" @click.away="open=false" class="mt-2 space-y-2" id="disclosure-1"><a href="/about-us/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">About Us</a><a href="/current-news/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Current News</a><a href="/join-us/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Join Us</a><a href="/help-needed/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Help Needed</a><a href="/events/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Events</a></div>
 		</div>
-		<div class="mt-6 flow-root">
-			<div class="-my-6 divide-y divide-gray-500/10">
-			<div class="space-y-2 py-6">
-				<div class="-mx-3">
-				<button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
-					Product
-					<!--
-					Expand/collapse icon, toggle classes based on menu open state.
+						<div x-data="{ open: false }" class="space-y-2">
+			<button @click="open=!open" type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-white hover:bg-green-500/25" aria-controls="disclosure-1" aria-expanded="false">
+				The Site
+				<!--
+				Expand/collapse icon, toggle classes based on menu open state.
 
-					Open: "rotate-180", Closed: ""
-					-->
-					<svg class="size-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+				Open: "rotate-180", Closed: ""
+				-->
+				<svg class="size-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
 					<path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-					</svg>
-				</button>
-				<!-- 'Product' sub-menu, show/hide based on menu state. -->
-				<div class="mt-2 space-y-2" id="disclosure-1">
-					<a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Analytics</a>
-					<a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Engagement</a>
-					<a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Security</a>
-					<a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Integrations</a>
-					<a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Automations</a>
-					<a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Watch demo</a>
-					<a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Contact sales</a>
-				</div>
-				</div>
+				</svg>
+			</button>
 
-				<a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
-				<a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
+			<!-- sub-menu, show/hide based on menu state -->
+			<div x-show="open" @click.away="open=false" class="mt-2 space-y-2" id="disclosure-1"><a href="/the-site/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">The Site</a><a href="/cuddington/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Cuddington</a><a href="/nonsuch-palace/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Nonsuch Palace</a><a href="/nonsuch-mansion/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Nonsuch Mansion</a><a href="/the-park/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">The Park</a></div>
+		</div>
+						<div x-data="{ open: false }" class="space-y-2">
+			<button @click="open=!open" type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-white hover:bg-green-500/25" aria-controls="disclosure-1" aria-expanded="false">
+				Museum &amp; Gallery
+				<!--
+				Expand/collapse icon, toggle classes based on menu open state.
 
-				<div class="-mx-3">
-				<button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50" aria-controls="disclosure-2" aria-expanded="false">
-					Company
-					<!--
-					Expand/collapse icon, toggle classes based on menu open state.
-
-					Open: "rotate-180", Closed: ""
-					-->
-					<svg class="size-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+				Open: "rotate-180", Closed: ""
+				-->
+				<svg class="size-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
 					<path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-					</svg>
-				</button>
-				<!-- 'Company' sub-menu, show/hide based on menu state. -->
-				<div class="mt-2 space-y-2" id="disclosure-2">
-					<a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">About us</a>
-					<a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Careers</a>
-					<a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Support</a>
-					<a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Press</a>
-					<a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Blog</a>
-				</div>
+				</svg>
+			</button>
+
+			<!-- sub-menu, show/hide based on menu state -->
+			<div x-show="open" @click.away="open=false" class="mt-2 space-y-2" id="disclosure-1"><a href="/museum-gallery/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Museum &amp; Gallery</a><a href="/service-wing-museum/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Service Wing Museum</a><a href="/nonsuch-palace-model/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Nonsuch Palace Model</a><a href="/school-group-visits/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">School &amp; Group Visits</a><a href="/organised-visits-and-talks/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Organised Visits &amp; Talks</a><a href="/opening-times/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Opening Times</a></div>
+		</div>
+						<a href="/book-room/" class="block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-green-500/25 no-underline">Book Room</a>
+						<div x-data="{ open: false }" class="space-y-2">
+			<button @click="open=!open" type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-white hover:bg-green-500/25" aria-controls="disclosure-1" aria-expanded="false">
+				Research Projects
+				<!--
+				Expand/collapse icon, toggle classes based on menu open state.
+
+				Open: "rotate-180", Closed: ""
+				-->
+				<svg class="size-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+					<path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+				</svg>
+			</button>
+
+			<!-- sub-menu, show/hide based on menu state -->
+			<div x-show="open" @click.away="open=false" class="mt-2 space-y-2" id="disclosure-1"><a href="/research-projects/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Research Projects</a><a href="/farmer-family/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Farmer Family</a><a href="/stained-glass/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Stained Glass</a></div>
+		</div>
+						<div x-data="{ open: false }" class="space-y-2">
+			<button @click="open=!open" type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-white hover:bg-green-500/25" aria-controls="disclosure-1" aria-expanded="false">
+				General Information
+				<!--
+				Expand/collapse icon, toggle classes based on menu open state.
+
+				Open: "rotate-180", Closed: ""
+				-->
+				<svg class="size-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+					<path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+				</svg>
+			</button>
+
+			<!-- sub-menu, show/hide based on menu state -->
+			<div x-show="open" @click.away="open=false" class="mt-2 space-y-2" id="disclosure-1"><a href="/general-information/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">General Information</a><a href="/find-us/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">How To Find Us</a><a href="/contact-us/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">How to Contact Us</a><a href="/sales/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Sales</a><a href="/links/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Links</a><a href="/nonsuch-garden-map/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Garden Map</a><a href="/memorial-plaques/" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">Memorial Plaques</a></div>
+		</div>
+						<a href="/photos/" class="block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-green-500/25 no-underline">Photos</a>
+						</div>
 				</div>
 			</div>
-				<div class="py-6">
-					<a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
-				</div>
-			</div>
 		</div>
-		</div>
-	</div>
+	</nav>
 </header>
 
 
@@ -176,7 +211,7 @@
 	<main class="-mt-32">
 		<div class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
 			<div class="rounded-lg bg-white px-5 py-6 shadow sm:px-6">
-				<p>This is a map to show you the layout of the formal gardens and what we feel are the most interesting features. On the map itself it includes numbers and it is these numbers which correspond to a feature in the garden. We have added a useful key so you know what the certain features in the garden actually are. Above we have also included photographs of each feature so that you can see what the feature looks like in real life. However they don't correspond to the numbers below in the key, the name of the feature is given in the caption.
+				<p>This is a map to show you the layout of the formal gardens and what we feel are the most interesting features. On the map itself it includes numbers and it is these numbers which correspond to a feature in the garden. We have added a useful key so you know what the certain features in the garden actually are. Above we have also included photographs of each feature so that you can see what the feature looks like in real life. However they don't correspond to the numbers below in the key, the name of the feature is given in the caption.<br>
 KEY</p>
 <ol>
 <li>The Dell</li>
