@@ -1,7 +1,7 @@
 {%- if media == 'desktop' -%}
 	{%- if menu.submenu -%}
 		<div x-data="{ open: false }" class="relative">
-			<button  @click="open=!open" type="button" class="flex p-2 items-center gap-x-1 text-sm/6 font-semibold text-white" aria-expanded="false">
+			<button @click="open=!open" type="button" class="flex p-2 items-center gap-x-1 text-sm/6 font-semibold text-white" aria-expanded="false">
 				{{ menu.label }}
 				<svg class="size-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
 					<path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
@@ -18,9 +18,28 @@
 		<a href="{{ menu.url }}" class="text-sm/6 font-semibold p-2 text-white no-underline">{{ menu.label }}</a>
 	{%- endif -%}
 {%- else -%}
-	{%- if menu.url == page.url -%}
-		<a href="{{ menu.url }}" class="block rounded-md bg-green-900 px-3 py-2 text-base font-medium text-white no-underline" aria-current="page">{{ menu.label }}</a>
+	{%- if menu.submenu -%}
+		<div x-data="{ open: false }" class="space-y-2">
+			<button @click="open=!open" type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-white hover:bg-green-500/25" aria-controls="disclosure-1" aria-expanded="false">
+				{{ menu.label }}
+				<!--
+				Expand/collapse icon, toggle classes based on menu open state.
+
+				Open: "rotate-180", Closed: ""
+				-->
+				<svg class="size-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+					<path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+				</svg>
+			</button>
+
+			<!-- sub-menu, show/hide based on menu state -->
+			<div x-show="open" @click.away="open=false" class="mt-2 space-y-2" id="disclosure-1">
+				{%- for submenu in menu.submenu -%}
+					<a href="{{ submenu.url }}" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-white hover:bg-green-500/25 no-underline">{{ submenu.label }}</a>
+				{%- endfor -%}
+			</div>
+		</div>
 	{%- else -%}
-		<a href="{{ menu.url }}" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-green-500/25 no-underline">{{ menu.label }}</a>
+		<a href="{{ menu.url }}" class="block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-green-500/25 no-underline">{{ menu.label }}</a>
 	{%- endif -%}
 {%- endif -%}
