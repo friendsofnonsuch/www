@@ -24,4 +24,7 @@ The Nonsuch Palace model has been used by Roehampton University in a new MOOC - 
 ## ​New Nonsuch Model Photos {#model}
 One of our volunteers has been editing some new photos of the Nonsuch Palace Model - on display in the [Nonsuch Gallery](/nonsuch-palace-model/) - with the aim to show how the palace may have looked within its natural surroundings. We've been updating the website with a few of these new photos and hope they trigger your imagination into the splendour of the palace when it stood in Nonsuch, do come and visit us at Nonsuch Mansion, we'd love to show of the museum and gallery to you.
 
-![Nonsuch Model Photo](./images/model.jpg) {.mx-auto .w-screen .lg:w-5/6 .object-cover}
+<div class="w-full text-center">
+	<img class="mx-auto w-screen lg:w-5/6 object-cover" src="./images/model.jpg" eleventy:widths="auto" alt="Nonsuch Model Photo" />
+</div>
+
