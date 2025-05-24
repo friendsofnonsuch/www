@@ -1,6 +1,6 @@
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 import markdownIt from 'markdown-it';
-// import markdownItAnchor from 'markdown-it-anchor';
+import markdownItAttrs from 'markdown-it-attrs';
 
 export default async function( eleventyConfig ) {
 	let options = {
@@ -14,7 +14,7 @@ export default async function( eleventyConfig ) {
 	eleventyConfig.setLibrary( 'md', markdownIt( options ) );
 
 	eleventyConfig.amendLibrary( 'md', ( mdLib ) => mdLib.use( markdownIt ) );
-	// eleventyConfig.amendLibrary( 'md', ( mdLib ) => mdLib.use( markdownItAnchor ) );
+	eleventyConfig.amendLibrary( 'md', ( mdLib ) => mdLib.use( markdownItAttrs ) );
 
 	eleventyConfig.addPlugin( eleventyImageTransformPlugin );
 };
