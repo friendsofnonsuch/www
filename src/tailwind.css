@@ -6,7 +6,9 @@
 }
 
 @layer components {
+	h1 { @apply text-3xl font-bold tracking-tight text-primary; }
 	h2 { @apply text-2xl font-bold tracking-tight text-primary; }
+	h3 { @apply text-xl font-bold tracking-tight text-primary; }
 	p { @apply pt-2 pb-2; }
 	a { @apply text-primary underline; }
 }
