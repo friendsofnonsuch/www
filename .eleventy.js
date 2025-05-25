@@ -11,6 +11,7 @@ export default async function( eleventyConfig ) {
 
 	eleventyConfig.addGlobalData( 'layout', 'layouts/default.html' );
 
+	eleventyConfig.addPassthroughCopy( 'src/documents' );
 	eleventyConfig.setLibrary( 'md', markdownIt( options ) );
 
 	eleventyConfig.amendLibrary( 'md', ( mdLib ) => mdLib.use( markdownIt ) );
