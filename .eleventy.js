@@ -11,6 +11,8 @@ export default async function( eleventyConfig ) {
 
 	eleventyConfig.addGlobalData( 'layout', 'layouts/default.html' );
 
+	eleventyConfig.addShortcode( 'year', () => `${ new Date().getFullYear() }`);
+	
 	eleventyConfig.addPassthroughCopy( 'src/documents' );
 	eleventyConfig.addPassthroughCopy( 'src/assets' );
 
