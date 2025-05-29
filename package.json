@@ -20,10 +20,8 @@
     "url": "https://github.com/friendsofnonsuch/www/issues"
   },
   "homepage": "https://github.com/friendsofnonsuch/www#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^1.0.0"
-  },
   "dependencies": {
+    "@11ty/eleventy": "^3.1.0",
     "@11ty/eleventy-fetch": "^4.0.1",
     "@sanity/client": "^2.7.1",
     "dotenv": "^8.2.0"
