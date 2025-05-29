@@ -22,7 +22,7 @@
   "homepage": "https://github.com/friendsofnonsuch/www#readme",
   "dependencies": {
     "@11ty/eleventy": "^3.1.0",
-    "@11ty/eleventy-fetch": "^4.0.1",
+    "@11ty/eleventy-fetch": "^5.1.0",
     "@sanity/client": "^2.7.1",
     "dotenv": "^8.2.0"
   }
