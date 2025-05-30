@@ -1,5 +1,6 @@
 ---
 title: How to Join Us and Keep Nonsuch Safe
+date: git Last Modified
 ---
 
 Please help us preserve the Nonsuch Park Estate for you.

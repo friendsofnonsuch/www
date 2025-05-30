@@ -1,5 +1,6 @@
 ---
 title: Nonsuch Palace
+date: git Last Modified
 ---
 
 The birth of Henry VIII's sole surviving son led directly to the destruction of the manor of Cuddington. To celebrate both the securing of the succession and the advent of the thirtieth year of his reign, Henry decided to build a palace which would have no equal and call it "None Such".

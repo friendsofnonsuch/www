@@ -1,5 +1,6 @@
 ---
 title: Current News
+date: git Last Modified
 ---
 
 ## Notes from the Chairman 2022

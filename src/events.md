@@ -1,5 +1,6 @@
 ---
 title: Dates for your Diary
+date: git Last Modified
 ---
 
 Refreshments are offered in the Loose Box after all events and attendees are asked to arrive 15 minutes before the start.

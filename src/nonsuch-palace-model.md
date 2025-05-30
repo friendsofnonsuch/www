@@ -1,5 +1,6 @@
 ---
 title: Nonsuch Palace Model
+date: git Last Modified
 ---
 
 Working tirelessly through the few illustrations and the extensive descriptions, coupled with knowledge gained from the excavation, it has been possible to create an image of the Palace that is unforgettable. The inner, or royal, courtyard was of a construction never attempted before, nor repeated since. It was a gigantic work of art. To see even this small representation of the building is to realize why Hoefnagel regarded it as one of the wonders of the world (the reason he painted his famous watercolour).

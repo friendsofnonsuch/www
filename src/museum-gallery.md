@@ -1,5 +1,6 @@
 ---
 title: Museum and Gallery
+date: git Last Modified
 ---
 
 Please see our Opening Times page for further information on when to visit.

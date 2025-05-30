@@ -1,5 +1,6 @@
 ---
 title: Organised Visits and Talks
+date: git Last Modified
 ---
 
 The Service Wing Museum will be opened for pre-arranged guided tours from March to November

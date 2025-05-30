@@ -1,5 +1,6 @@
 ---
 title: External Links
+date: git Last Modified
 ---
 
 Nonsuch Mansion - Information about Nonsuch Mansion as a social venue, including The Pantry café

@@ -1,8 +1,9 @@
 ---
 title: Opening Times
+date: git Last Modified
 ---
 
-## Nonsuch Palace Gallery (Open year round)
+## Nonsuch Palace Gallery
 Is open every Sunday throughout the year from 12pm - 4pm. Entry is FREE. Visit to see the model and history of Henry VIII's Nonsuch Palace.
 
 ## The Service Wing Museum

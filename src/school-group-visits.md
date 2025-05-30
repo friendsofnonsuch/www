@@ -1,5 +1,6 @@
 ---
 title: School and Group Visits
+date: git Last Modified
 ---
 
 The Friends of Nonsuch offer pre-arranged Group and School visits from March to October.

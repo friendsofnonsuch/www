@@ -1,5 +1,6 @@
 ---
 title: Nonsuch Mansion
+date: git Last Modified
 ---
 
 Click Here to visit the Nonsuch Mansion Garden Map

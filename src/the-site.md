@@ -1,5 +1,6 @@
 ---
 title: The Site
+date: git Last Modified
 ---
 
 Leading to all the old and present buildings and gardens which stood in the grounds of Nonsuch Park, click on the picture which corresponds to the writing next to it to travel to the various pages.

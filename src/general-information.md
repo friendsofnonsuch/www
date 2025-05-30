@@ -1,5 +1,6 @@
 ---
 title: General Information
+date: git Last Modified
 ---
 
 Leading to all the important information needed not only to contact us but also to find where we are situated, click on the picture which corresponds to the writing next to it to travel to the various pages.

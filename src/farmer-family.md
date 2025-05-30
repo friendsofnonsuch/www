@@ -1,5 +1,6 @@
 ---
 title: The Farmer Family of Nonsuch
+date: git Last Modified
 ---
 
 Samuel Farmer who purchased Nonsuch in 1799 claimed his lineage could be traced back through the

@@ -1,5 +1,6 @@
 ---
 title: About Us
+date: git Last Modified
 ---
 
 The Friends of Nonsuch was formed in 1991 to fight for the preservation Of the Nonsuch Park Estate as an open space accessible to all. Their successful campaign highlighted the need for conservation work on the Grade II* Listed Georgian Mansion House alongside other organisations such as the Nonsuch Watch who placed emphasis on preserving the parkland. Indeed the cost of renovations to the mansion house were a huge drain on council resources and one of the main reasons for the potential sale of the park and mansion house into private ownership. Since 1991 groups of volunteers have been restoring the Mansion and providing support to conservation projects within the mansion house.

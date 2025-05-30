@@ -1,5 +1,6 @@
 ---
 title: We Need Your Help
+date: git Last Modified
 ---
 
 The Friends are involved in a number of projects all staffed by volunteers. There are many administrative functions such as STEWARDS, VISITS, PUBLICITY, and NEWSLETTER PRODUCTION, all of which  must be staffed. It need not be onerous, if you can offer an hour or two a week your help would be invaluable.

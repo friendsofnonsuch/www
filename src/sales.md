@@ -1,5 +1,6 @@
 ---
 title: Nonsuch Shop
+date: git Last Modified
 ---
 
 The shop will be open from April to September on the same dates as the Service Wing Museum.

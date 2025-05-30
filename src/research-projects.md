@@ -1,5 +1,6 @@
 ---
 title: Research Projects
+date: git Last Modified
 ---
 
 Leading to the Farmer family tree and the stained glass windows of Nonsuch, both in their own way very interesting projects which are still being researched, so if you have any more info, then please contact us.

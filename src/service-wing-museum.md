@@ -1,5 +1,6 @@
 ---
 title: The Service Wing Museum
+date: git Last Modified
 ---
 
 During the eighteenth century building design began to include an extra wing to house the servants and the new technology that was being developed.  These were usually placed on the north side of the house and surrounded by hedges to hide them from view.  They began as rectangular additions and were added to as need arose. The service wing at Nonsuch is placed on the north east side of the house and is accessed through an enclosed courtyard.  The cellars can be entered by a ramp in one corner of this courtyard.  The original service wing was connected to the dairy by a covered walkway and comprised the inner scullery, kitchen, inner and outer larders, the laundries and the stable block.  Most of the service wing was constructed when the mansion house was erected but the remains of an earlier Georgian building were incorporated into the laundries.  The brickwork in the outer scullery is different to that of the inner scullery which suggests that it was a later addition but the date is unknown.  The pastry larder and game larder were added between the 1840s and 1860s.

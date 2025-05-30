@@ -1,5 +1,6 @@
 ---
 title: Friends of Nonsuch Mansion and Gardens
+date: git Last Modified
 ---
 
 ## News {#news}

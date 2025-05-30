@@ -1,5 +1,6 @@
 ---
 title: How to Find Us
+date: git Last Modified
 ---
 
 For those of you with SatNav the postcode is SM3 8AL
