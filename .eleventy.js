@@ -3,18 +3,18 @@ import markdownIt from 'markdown-it';
 import markdownItAttrs from 'markdown-it-attrs';
 
 export default async function( eleventyConfig ) {
+	eleventyConfig.addGlobalData( 'layout', 'layouts/default.html' );
+
+	eleventyConfig.addShortcode( 'year', () => `${ new Date().getFullYear() }`);
+
+	eleventyConfig.addPassthroughCopy( 'src/documents' );
+	eleventyConfig.addPassthroughCopy( 'src/assets' );
+
 	let options = {
 		html: true,
 		breaks: true,
 		linkify: true,
 	};
-
-	eleventyConfig.addGlobalData( 'layout', 'layouts/default.html' );
-
-	eleventyConfig.addShortcode( 'year', () => `${ new Date().getFullYear() }`);
-	
-	eleventyConfig.addPassthroughCopy( 'src/documents' );
-	eleventyConfig.addPassthroughCopy( 'src/assets' );
 
 	eleventyConfig.setLibrary( 'md', markdownIt( options ) );
 
