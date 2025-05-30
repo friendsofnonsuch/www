@@ -48,12 +48,7 @@
 				</div>
 
 				<p class="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0">
-					Page last updated: {{ page.date | date: "%A, %e %B %Y, %l:%M%P (%Z)" }} -
-
-
-<script>document.write( new Date( "{{ page.date }}" ).toLocaleString( 'en-GB', { 'dateStyle': 'full', 'timeStyle': 'short' } ) );</script>
-
-				</p>
+					Page last updated: <script>document.write( new Date( "{{ page.date }}" ).toLocaleString( 'en-GB', { 'weekday': 'long', 'month': 'long', 'year': 'numeric', 'day': 'numeric', 'hour': 'numeric', 'minute': 'numeric', 'hour12': true } ) );</script>
 			</div>
 		</div>
 	</main>
