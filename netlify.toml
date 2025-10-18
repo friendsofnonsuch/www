@@ -3,8 +3,10 @@
   command = 'npm run build'
   environment = { ELEVENTY_ENV = 'production' } # to enable Eleventy to know the environment
 
-
 [context.preview] # 'preview' is the branch name
   publish = '_site/'
   command = 'npm run build'
   environment = { ELEVENTY_ENV = 'preview' } # to enable Eleventy to know the environment
+
+[functions]
+  node_bundler = 'esbuild'
