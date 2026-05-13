@@ -24,7 +24,6 @@
     "@11ty/eleventy": "^3.1.0",
     "@11ty/eleventy-fetch": "^5.1.0",
     "@netlify/functions": "^5.0.0",
-    "@sanity/client": "^2.7.1",
     "dotenv": "^8.2.0",
     "node-fetch": "^3.3.2"
   }
